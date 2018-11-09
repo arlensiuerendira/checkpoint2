@@ -44,7 +44,7 @@ Pour récupérer les informations, tu devras te servir de l'API https://pokeapi.
 Tu peux utiliser au choix [Axios](https://github.com/axios/axios) ou [Fetch](https://developer.mozilla.org/fr/docs/Web/API/Fetch_API/Using_Fetch) pour récupérer les données.
 
 * `<PokemonList />` devra récupérer les Pokemons de l'API et devra appeler autant de composants `<Pokemon />` qu'il y a d'éléments dans le tableau récupéré depuis l'API.
-* `<Pokemon />` devra récupérer via des *props* le nom, l'image et les différents mouvements disponible pour ce Pokemon et les afficher dans la page sous le format de ton choix
+* `<Pokemon />` devra récupérer via des *props* le nom et l'URL pour récupérer la suite des informations. Celui-ci devra donc afficher l'image, le nom du Pokemon et les différents mouvements disponible (en requêtant l'URL du type http://pokeapi.salestock.net/api/v2/pokemon/1/, ou le `/1/` correspond à l'id du Pokemon) et les afficher dans la page sous le format de ton choix.
 * `<PokemonList />` devra également permettre une pagination en bas de page qui sera gérée grâce au _state_. Il permettra ainsi d'afficher les vingt premiers puis les vingts suivants etc... Pour cela tu peux regarder dans la documentation sur les [ressources](https://pokeapi.co/docs/v2.html#resource-lists) ou bien récupérer tous les pokemons et faire un [slice()](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Array/slice) dessus.
 
 ## Étape 4 - Bonus
